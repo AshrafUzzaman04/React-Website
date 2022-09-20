@@ -28,7 +28,7 @@ const Footer = () => {
           <a className="link link-hover">certificate</a>
         </div>
       </footer>
-      <footer className="footer px-10 py-4 border-t bg-base-200 text-base-content border-base-300">
+      <footer className="footer px-10 py-4 border-t bg-base-200 text-base-content border-base-300 grid justify-between">
         <div className="items-center grid-flow-col">
           <svg
             width="30"
@@ -51,7 +51,7 @@ const Footer = () => {
             Providing reliable tech since 1992
           </p>
         </div>
-        <div className="md:place-self-center md:justify-self-end">
+        <div className="grid-flow-col">
           <div className="grid grid-flow-col gap-4">
             <a
               href="https://twitter.com/UzMahim"
