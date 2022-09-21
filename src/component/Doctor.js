@@ -20,7 +20,7 @@ const Doctor = () => {
         <img
           src={Img2}
           alt=""
-          className="object-cover block md:hidden rounded-full w-72 my-6"
+          className="object-cover block md:hidden rounded-full w-72 h-72 my-6 mx-auto"
         />
       </div>
       {/* text side */}

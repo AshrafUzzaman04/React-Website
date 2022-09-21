@@ -4,33 +4,30 @@ import Footer from "./component/Footer";
 import Card from "./component/Card";
 import Msg from "./component/Msg";
 import Doctor from "./component/Doctor";
-import axios from "axios";
-import { useState } from "react";
-import { useEffect } from "react";
+// import axios from "axios";
+// import { useState } from "react";
+// import { useEffect } from "react";
+import Json from "./generated.json";
 
 const App = () => {
-  const [MediaCard, setMediaCard] = useState([]);
-  useEffect(() => {
-    try {
-      fetchData();
-    } catch {}
-  });
-  const fetchData = async () => {
-    await axios
-      .get("https://jsonplaceholder.typicode.com/users")
-      .then((data) => setMediaCard(data.data));
-  };
+  // const [MediaCard, setMediaCard] = useState([]);
+  // useEffect(() => {
+  //   try {
+  //     fetchData();
+  //   } catch {}
+  // });
+  // const fetchData = async () => {
+  //   await axios.get(Json).then((data) => setMediaCard(data.data));
+  // };
 
   return (
     <div>
       {/* navbar part */}
-      <div className="w-full  h-[100vh] mx-auto overflow-hidden bg-[url('/src/image/dental.jpg')] bg-fixed backGroundImg ">
-        <div className="sticky">
-          <Navbar />
-        </div>
-        <div>
-          <Home />
-        </div>
+      <div className="w-full mx-auto overflow-hidden ">
+        <Navbar />
+      </div>
+      <div>
+        <Home />
       </div>
       <div>
         <Doctor />
@@ -43,8 +40,8 @@ const App = () => {
           </span>
         </div>
         <div className="grid gap-4 xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 m-6 bgImg">
-          {MediaCard.map((res) => (
-            <Card key={res.id} setMediaCard={res} />
+          {Json.map((res) => (
+            <Card key={res.id} setMediaCard={res} image={res.image} />
           ))}
         </div>
       </div>

@@ -4,8 +4,11 @@ import { faTooth } from "@fortawesome/free-solid-svg-icons";
 
 const Navbar = () => {
   return (
-    <div className="navbar fixed" style={{ backgroundColor: "#5cfffdb3 " }}>
-      <div className="navbar-start">
+    <div
+      className="navbar fixed top-0"
+      style={{ backgroundColor: "#5cfffdb3 ", zIndex: "100" }}
+    >
+      <div className="navbar-start  ">
         <FontAwesomeIcon
           icon={faTooth}
           className=" mx-3 hover:text-sky-500"

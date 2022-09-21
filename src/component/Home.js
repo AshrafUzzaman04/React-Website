@@ -3,9 +3,9 @@ import React from "react";
 const home = () => {
   return (
     <div>
-      <div className="hero min-h-screen  ">
+      <div className="hero min-h-screen bg-[url('/src/image/dental.jpg')] bg-fixed backGroundImg">
         <div className="hero-content text-center text-neutral-content">
-          <div className="max-w-md bg-[#08080846] p-8 rounded-lg relative">
+          <div className="max-w-md bg-[#08080846] p-8 rounded-lg">
             <h1 className="mb-5 text-5xl font-bold">
               Your reason to
               <div className="waviy">
