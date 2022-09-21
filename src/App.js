@@ -36,7 +36,13 @@ const App = () => {
       <div>
         <div className="text-center mt-12">
           <span className="text-3xl md:text-4xl font-serif font-semibold relative">
-            Our skilled dentist.
+            Our skilled
+            <button data-text="Awesome" className="btndentis ml-3">
+              <span className="actual-text">&nbsp;dentist&nbsp;</span>
+              <span className="hover-text" aria-hidden="true">
+                &nbsp;dentist&nbsp;
+              </span>
+            </button>
           </span>
         </div>
         <div className="grid gap-4 xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 m-6 bgImg">

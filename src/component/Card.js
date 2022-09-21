@@ -10,18 +10,13 @@ import { Rating } from "@mui/material";
 import Img from "../image/Card (9).jpg";
 
 export default function MediaCard(props) {
-  const { name, about, image } = props.setMediaCard;
+  const { name, about } = props.setMediaCard;
 
   return (
     <div className="mx-auto mt-10">
       <div>
         <Card sx={{ maxWidth: 345 }}>
-          <CardMedia
-            component="img"
-            height="140"
-            image={image}
-            alt="green iguana"
-          />
+          <CardMedia component="img" image={Img} alt="green iguana" />
           <div className="hover:bg-[#90fff92f]">
             <CardContent>
               <Typography gutterBottom variant="h5" component="div">

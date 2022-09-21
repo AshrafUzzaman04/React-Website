@@ -6,7 +6,7 @@ const Navbar = () => {
   return (
     <div
       className="navbar fixed top-0"
-      style={{ backgroundColor: "#5cfffdb3 ", zIndex: "100" }}
+      style={{ backgroundColor: "#cfe9ff ", zIndex: "100" }}
     >
       <div className="navbar-start  ">
         <FontAwesomeIcon
